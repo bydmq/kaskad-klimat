@@ -1,0 +1,41 @@
+.partners {
+    padding-top: 40px;
+    padding-bottom: 120px;
+    &__title {
+        margin-bottom: 65px;
+    }
+    &__list {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__arrow {
+        position: absolute;
+        width: 51px;
+        height: 51px;
+        &--prev {
+            top: 50%;
+            left: -81px;
+            transform: translateY(-50%);
+            background-image: url(../img/arrow.png);
+        }
+        &--next {
+            top: 50;
+            right: -81px;
+            background-image: url(../img/arrow.png);
+            transform: rotate(180deg);
+        }
+    }
+    &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 235px;
+        height: 117px;
+        border-radius: 10px;
+        background-color: var(--color-white);
+        box-shadow: 0 0 21px 3px rgba(0,0,0,.16);
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,48 @@
+.whats-included {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-image: url(../img/whats-included-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__inner {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    &__content {
+        &--right {
+            margin-left: auto;
+        }
+    }
+    &__title {
+        max-width: 510px;
+        margin-bottom: 40px;
+    }
+    &__list {
+        counter-reset: ul;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        list-style: none;
+        &::before {
+            counter-increment: ul;
+            content: counter(ul);
+            width: 18px;
+            height: 2px;
+            background-color: var(--color-accent);
+            margin-right: 15px;
+            font-size: 0;
+        }
+    }
+    &__box {
+        text-align: center;
+    }
+    &__btn {
+        width: 395px;
+        height: 60px;
+        border-radius: 10px;
+        background-color: #08c;
+    }
+}

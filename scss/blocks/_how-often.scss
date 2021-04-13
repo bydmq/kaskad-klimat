@@ -1,0 +1,33 @@
+.how-often {
+    position: relative;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    &__title {
+        max-width: 620px;
+        margin-bottom: 30px;
+    }
+    &__descr {
+        max-width: 620px;
+        margin-bottom: 35px;
+    }
+    &__inner {
+        &::before {
+            content: "";
+            position: absolute;
+            top: 260px;
+            right: 0;
+            width: 790px;
+            height: 285px;
+            background-color: #deecfc;
+            z-index: 0;
+        }
+    }
+    &__img {
+        position: absolute;
+        top: 90px;
+        right: 0;
+        max-width: 770px;
+        max-height: 435px;
+        z-index: 5;
+    }
+}

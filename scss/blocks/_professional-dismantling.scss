@@ -1,0 +1,48 @@
+.professional-dismantling {
+    padding-top: 80px;
+    padding-bottom: 95px;
+    background-image: url(../img/professional-dismantling-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__descr {
+        margin-bottom: 40px;
+    }
+    &__inner {
+        display: flex;
+    }
+    &__list {
+        counter-reset: ol;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        list-style: none;
+        &::before {
+            counter-increment: ol;
+            content: counter(ol);
+            border-radius: 50%;
+            padding: 6px 16px;
+            margin-right: 20px;
+            background-color: var(--color-accent);
+            font-size: 18px;
+            color: var(--color-white);
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__box {
+        max-width: 530px;
+        margin-left: auto;
+    }
+    &__text {
+        &:first-child {
+            margin-bottom: 40px;
+        }
+    }
+}

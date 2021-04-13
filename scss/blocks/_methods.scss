@@ -1,0 +1,34 @@
+.methods {
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 100px;
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__text {
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__list {
+        margin-bottom: 5px;
+        counter-reset: ol;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        list-style: none;
+        &::before {
+            counter-increment: ol;
+            content: counter(ol);
+            border-radius: 50%;
+            padding: 6px 16px;
+            margin-right: 20px;
+            background-color: var(--color-accent);
+            font-size: 18px;
+            color: var(--color-white);
+        }
+    }
+}

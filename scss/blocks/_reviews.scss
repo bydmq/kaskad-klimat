@@ -1,0 +1,127 @@
+.reviews {
+    padding-top: 110px;
+    padding-bottom: 150px;
+    &__title {
+        position: relative;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px;
+            height: 4px;
+            background-color: #08c;
+        }
+    }
+    &__descr {
+        margin-bottom: 65px;
+        font-size: 24px;
+        text-align: center;
+    }
+    &__list {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 75px;
+    }
+    &__arrow {
+        position: absolute;
+        width: 51px;
+        height: 51px;
+        &--prev {
+            top: 165px;
+            left: 280px;
+            background-image: url(../img/arrow.png);
+        }
+        &--next {
+            top: 165px;
+            right: 280px;
+            background-image: url(../img/arrow.png);
+            transform: rotate(180deg);
+        }
+    }
+    &__item {
+        &.active {
+            opacity: .2;
+        }
+        &.active .reviews__item-img {
+            width: 210px;
+            height: 210px;
+        }
+        &.active .reviews__item-photo {
+            width: 50px;
+            height: 50px;
+            margin-top: -40px;
+            margin-bottom: 15px;
+        }
+        &.active .reviews__item-box {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__img {
+        width: 405px;
+        height: 405px;
+        border-radius: 50%;
+    }
+    &__item-photo {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        margin-top: -70px;
+        margin-bottom: 30px;
+    }
+    &__item-box {
+        text-align: center;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    &__item-name {
+        display: block;
+    }
+}
+.review {
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    &__item-text {
+        position: relative;
+        max-width: 610px;
+        width: 100%;
+        &::before {
+            content: "";
+            position: absolute;
+            left: -83px;
+            bottom: -35px;
+            width: 71px;
+            height: 63px;
+            background-image: url(../img/quotes.png);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: -35px;
+            right: -83px;
+            width: 71px;
+            height: 63px;
+            background-image: url(../img/quotes.png);
+            transform: rotate(180deg);
+        }
+    }
+}

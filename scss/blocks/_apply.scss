@@ -1,0 +1,95 @@
+.apply {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-image: url(../img/apply-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__inner {
+        display: flex;
+        margin-bottom: 60px;
+    }
+    &__title {
+        margin: 0;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 48px;
+    }
+    &__descr {
+        max-width: 600px;
+        margin-left: auto;
+    }
+    &__content {
+        display: flex;
+    }
+    &__title-content {
+        margin-bottom: 40px;
+    }
+    &__text {
+        max-width: 370px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    &__form {
+        max-width: 600px;
+        margin-left: auto;
+    }
+    &__form-content {
+        display: flex;
+        margin-bottom: 15px;
+    }
+    &__form-input {
+        width: 300px;
+        height: 60px;
+        border: none;
+        border-radius: 10px;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        background-color: var(--color-white);
+        box-shadow: 0 0 18px 3px rgba(0,0,0,.17);
+        &--captcha {
+            width: 186px;
+        }
+        &::placeholder {
+            font-family: 'HelveticaNeueCyr', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 36px;
+            color: #bababa;
+        }
+    }
+    &__form-textarea {
+        width: 100%;
+        max-width: 300px;
+        height: 200px;
+        border: none;
+        border-radius: 10px;
+        padding: 0;
+        padding-top: 20px;
+        padding-left: 20px;
+        margin-left: auto;
+        background-color: var(--color-white);
+        box-shadow: 0 0 18px 3px rgba(0,0,0,.17);
+        &::placeholder {
+            font-family: 'HelveticaNeueCyr', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 36px;
+            color: #bababa;
+        }
+    }
+    &__form-inner {
+        display: flex;
+    }
+    &__form-label {
+        margin-right: 20px;
+        font-size: 22px;
+    }
+    &__form-btn {
+        width: 300px;
+        height: 60px;
+        border-radius: 10px;
+        margin-left: auto;
+        background-color: #08c;
+    }
+}

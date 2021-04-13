@@ -1,0 +1,54 @@
+.service-price {
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 125px;
+    background-color: #eeeff5;
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__text {
+        margin-bottom: 40px;
+        &--last {
+            max-width: 480px;
+            margin-bottom: 0;
+        }
+    }
+    &__list {
+        margin-bottom: 40px;
+        counter-reset: ul;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        &::before {
+            counter-increment: ul;
+            content: counter(ul);
+            width: 24px;
+            height: 1px;
+            margin-right: 20px;
+            background-color: var(--color-accent);
+            font-size: 0;
+        }
+    }
+    &__inner {
+        &::before {
+            content: "";
+            position: absolute;
+            top: 240px;
+            right: 0;
+            width: 790px;
+            height: 285px;
+            background-color: #deecfc;
+            z-index: 0;
+        }
+    }
+    &__img {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        max-width: 770px;
+        max-height: 435px;
+        z-index: 5;
+    }
+}
